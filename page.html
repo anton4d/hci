@@ -1,22 +1,106 @@
 <!DOCTYPE html>
-<head>
+<head xmlns:float="http://www.w3.org/1999/xhtml">
+    <script>
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </head>
-<body style="background-color:cadetblue">
-    <div style="position:relative; overflow: hidden; padding: -25px -25px; background-color:darkslategrey; border-radius: 7px; margin-left: 15px; margin-right: 15px;">
-        <h2 style="float:left">Kunstbyggeren</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+
+</div>
+
+<body style="background-color:#C4A29E">
+    <div style="position:relative; overflow: hidden; padding: -25px -25px; background-color:#FFC6AC; border-radius: 7px; margin-left: 15px; margin-right: 15px;">
+        <img src="img/logo2.png" width="100px" height="100px" style="padding: 8px; float:left">
+        <h1 style="float:left; margin-top: 38px">Kunstbyggeren</h1>
         <div style="position:absolute">
-            <input style="margin-top: 38px; margin-left: 1300px; border-radius: 5px; border-color: cadetblue; border-width: 2px;" placeholder="search" type="text">
+            <input style="margin-top: 38px; margin-left: 1300px; border-radius: 5px; border-color: #FFC6AC; border-width: 2px;" placeholder="search" type="text">
         </div>
-        <div style="position: absolute; margin-left: 500px;">
-            <button style="margin-top: 12px; margin-left: 802px; padding:0px 66px; border-radius: 5px; border-color:cadetblue; border-width: 2px; background-color: cadetblue;">Login</button>
+
+    <div style="position: absolute; margin-left: 500px;">
+            <button style="margin-top: 12px; margin-left: 802px; padding:0px 66px; border-radius: 5px; border-color:#FFC6AC; border-width: 2px; background-color: #C4A29E;">Login</button>
+
         </div>
-        
-        
+
+
         
     </div>
 
-    <div style="position: sticky; float:left; padding: 250px 100px; margin-top: 50px; background-color: darkslategrey; border-radius: 7px; margin-left: 15px;">
-        
+
+    <div style="position: sticky; float:left; padding: 40px 100px 400px 0px; margin-top: 50px; background-color: #FFC6AC; border-radius: 7px; margin-left: 15px;">
+        <div style="float:left; padding-left: 5px; margin-top: 5px; padding-right: 5px; background-color: #FFC6AC; border-radius: 7px; margin-left: 15px;">
+
+            <div>
+                <h2>Followed</h2>
+                <h4>Naruto</h4>
+                <h4>Landskaber</h4>
+                <h4>blackboardArt</h4>
+
+
+                <h2>Recommended</h2>
+                <h4>Weekly Art</h4>
+                <h4>Coffee</h4>
+                <h4>Animal Art</h4>
+            </div>
+        </div>
     </div>
+        <div style="position: absolute; float:left; padding: 40px 40px 40px 40px; margin-top: 50px; background-color: #FFC6AC; border-radius: 7px; margin-left: 400px; padding-right: 250px">
+        <h1 style="float:right; position:absolute; margin-left: 1250px">...</h1>
+            <img src="img/oskild.png", width = "100" height="100" style="float:left; border-radius: 50px; padding-right: 10px    ">
+            <h2>MrRawrBerry:3</h2>
+        <div style="background: #C4A29E; margin-left: 200px; padding-right: 50px; padding-bottom: 25px; border-radius: 20px">
+        <h2 style ="padding-top: 50px; margin-left: 50px">Mit bjerg </h2>
+        <h5 style="margin-left: 50px"> Jeg elsker bjerge KEKW</h5>
+        <div>
+            <img src="img/bjerg.jpg", width="800" height="600" style="padding-top: 50px; padding-bottom: 25px; margin-left: 50px; float:left  ; position:relative">
+        </div>
+
+        <div style="margin-left: 50px">
+            <input style=" border-radius: 5px; border-color: #FFC6AC; border-width: 2px; float: left; margin-right: 25px" placeholder="Comment here!" type="text" >
+            <button> Comment</button>
+        </div>
+
+        </div>
+    </div>
+
+
+
+
+
 </body>
